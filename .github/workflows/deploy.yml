@@ -10,7 +10,7 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: 'monorganisation/mondepot.git'
+          repository: 'RobNamias/ERPsimulator.git'
       - run: sudo apt update # On met à jour les listings des paquets
       - run: sudo apt-get install rsync -y # On install rsync, nécessaire pour copier les assets vers le serveur web
       - name: Setup PHP # Configuration de PHP sur la machine virtuelle
